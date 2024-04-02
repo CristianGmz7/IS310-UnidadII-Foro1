@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas (To-Do List)</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div id="paddingBody">
+        <h1>Lista de tareas</h1>
+
+        <div id="primerosBotones">
+            <!-- action="#" porque no se va a realizar ninguna accion de envio -->
+            <form action="#" id="ingresoUsuario">
+                <input type="text" placeholder="Escribe tu tarea" autofocus id="barraAgregarTarea" autocomplete="off">
+                <input type="submit" value="+" id="añadirtarea">
+            </form>
+
+            <button id="eliminarLS">Borrar todo</button>
+        </div>
+
+        <div id="listatareas" class="contenedor-lista">
+
+        
+            <!-- <div class="contenedor-tareas" id="1">
+                <label>
+                    <input type="checkbox class="tarea-hecha" id= "checkbox 1""> 
+                    Tarea 1
+                </label>
+                <img src="./assets/images/basura.png" class="cerrar-boton">
+            </div> -->
+
+        </div>
+
+        <div id="estadisticas">
+            <!-- Tareas pendiente 5 Tareas Completadas 3 -->
+        </div>
+        <script type="module" src="./js/main.js"></script>
+    </div>
+</body>
+</html>

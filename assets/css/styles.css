@@ -1,0 +1,120 @@
+:root{
+    --azul: #55557b;
+    --azulPalido: #7b8ea6;
+    --azulMuyPalido: #c4d1e0;
+    --gris: #55557b;
+    --blanco: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#paddingBody{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--azul);
+    margin: 45px;
+    width: 1220px;
+    height: 525px;
+}
+
+h1{
+    padding: 1.2%;
+    color: var(--blanco);
+    text-align: center;
+}
+
+#primerosBotones{
+    text-align: center;
+}
+
+#primerosBotones > * {
+    display: inline-block;
+}
+
+form{
+    width: 400px;
+    margin-top: 45px; margin-bottom: 45px;
+    text-align: center;
+}
+
+#barraAgregarTarea{ 
+    background-color: var(--azul);
+    color: var(--blanco);   
+    border-style: none;     
+    font-size: 1.5em;        
+}
+
+#barraAgregarTarea::placeholder{ 
+    color: var(--azulMuyPalido)
+}
+
+
+#barraAgregarTarea:focus{ 
+    outline: none; 
+}
+
+form input[type="submit"]{
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    color: var(--azul)
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--azulMuyPalido);
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+#eliminarLS{
+    font-size: 1.5em;
+    width: 150px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5%;
+    color: var(--azul);
+}
+
+#eliminarLS:hover{
+    background-color: var(--azulMuyPalido);
+    cursor: pointer;
+    color: var(--blanco);
+}   
+
+.contenedor-lista{
+    width: 400px;
+    height: 250px;
+    margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto;
+    overflow: auto;
+}
+
+.contenedor-tareas{
+    background-color: var(--blanco);
+    display: flex;      
+    justify-content: space-between; 
+    margin-bottom: 6px;        
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--gris);
+}
+
+.cerrar-boton{
+    width: 15px;
+    height: 15px;
+}
+.contenedor-tareas:hover{
+    cursor: pointer;
+}
+
+#estadisticas{
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: var(--azulMuyPalido);
+    text-align: center;
+}
